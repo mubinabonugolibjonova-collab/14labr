@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write  # Bu qator robotga yangi branch yaratishga ruxsat beradi
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
